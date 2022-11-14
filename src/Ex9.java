@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class Ex9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+
+
         int number;
         do {
             System.out.println("please enter positive number");
