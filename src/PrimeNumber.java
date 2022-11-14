@@ -3,28 +3,30 @@ import java.util.Scanner;
 public class PrimeNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int amountOfPrimeNumber,number=3,x=1;
+        int amountOfPrimeNumber;
+        int firstNumberToChack=3; //  The second number is the series.
+        int sumOfPrimeNumber=1;
         int checkPrimeNumber=0;
         do{
-            System.out.println("please enter positive number");
+            System.out.println("How much prime numbers you want to see? Enter a number positive and grater than-0");
             amountOfPrimeNumber= scanner.nextInt();
         }while(amountOfPrimeNumber<=0);
-        System.out.println("2");
-        while(amountOfPrimeNumber!=x){
-            for(int i=2;i<number;i++){
-                if(number%i==0){
+        System.out.println(2);
+        while(amountOfPrimeNumber!=sumOfPrimeNumber){
+            for(int i=2;i<firstNumberToChack;i++){ // The number one is not a prime number.
+                if(firstNumberToChack%i==0){
                     checkPrimeNumber=1;
                     break;
                 }
             }
             if(checkPrimeNumber==0){
-                System.out.println(number);
-                x++;
+                System.out.println(firstNumberToChack);
+                sumOfPrimeNumber++;
             }
             else {
                 checkPrimeNumber=0;
             }
-            number+=2;
+            firstNumberToChack+=2; // An even number is never a prime number.
         }
     }
 }
