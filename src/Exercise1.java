@@ -23,7 +23,7 @@ public class Exercise1 {
         } else if (firstNumberA == 0 && thirdNumberC == 0 && secondNumberB != 0) {
             System.out.println("There is only one solution to the equation: 0");
         }  else if (firstNumberA==0&&secondNumberB==0&&thirdNumberC==0) {
-            System.out.println("There is no solution to the equation");
+            System.out.println("There are endless solutions");
         } else if (delta==0) {
             System.out.println("There is only one solution to the equation: " + secondNumberB/(2*firstNumberA));
         }else {

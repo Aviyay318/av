@@ -4,7 +4,7 @@ public class Exercise4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int amountOfPrimeNumber;
-        int firstNumberToCheck=3; //  The second number is the series.
+        int firstNumberToCheck=3;//  The second number is the series.
         int sumOfPrimeNumber=1;
         int checkPrimeNumber=0;
         do{
