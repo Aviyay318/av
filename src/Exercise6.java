@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex6 {
+public class Exercise6 {
     public static void main(String[] args) {
         int number;
         int tempNumber=0;

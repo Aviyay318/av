@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class InvoiceSeries {
+public class Exercise2 {
     public static void main(String[] args) {
         float firstNumber;
         float distance;

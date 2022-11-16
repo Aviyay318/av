@@ -1,4 +1,4 @@
-public class Ex8 {
+public class Exercise7 {
     public static void main(String[] args) {
        int tempNumber;
        int sumDigits;

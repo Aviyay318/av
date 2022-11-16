@@ -28,7 +28,7 @@ public class Ex9 {
                     if (number/2<i-j){
                         System.out.print(" ");
                     }
-                    else if ((i+j)-1>number){
+                    else if ((i+j)-1>number+1){
                         System.out.print(" ");
                     }
                     else {
