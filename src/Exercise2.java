@@ -14,7 +14,7 @@ public class Exercise2 {
             System.out.println("Enter the amount of objects in the series ");
             numberOfObjects=scanner.nextFloat();
         }while(numberOfObjects<0||numberOfObjects%1!=0);
-        System.out.print("the series is: "+"("+firstNumber+")"+"\t");
+        System.out.print("The series is: "+"("+firstNumber+")"+"\t");
         for (int i=1;i<numberOfObjects;i++){
             System.out.print("("+(firstNumber+=distance)+")"+"\t");
         }
