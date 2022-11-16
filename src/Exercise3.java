@@ -3,39 +3,39 @@ import java.util.Scanner;
 public class Exercise3 {
     public static void main(String[] args) {
                 Scanner scanner = new Scanner(System.in);
-                int NumberOfDiamond;
-                int NumberOfAsterisks=1;
-                int NumberOfSpaces;
+                int numberOfDiamond;
+                int numberOfAsterisks=1;
+                int numberOfSpaces;
                 do { System.out.println("Please enter an odd positive number grater than three: ");
-                    NumberOfDiamond=scanner.nextInt();
-                }while (NumberOfDiamond<3 || NumberOfDiamond%2==0);
-                NumberOfSpaces=NumberOfDiamond/2;
-                for (int i=0;i<=(NumberOfDiamond/2);i++){
-                    for (int z=0;z<NumberOfSpaces;z++)
+                    numberOfDiamond=scanner.nextInt();
+                }while (numberOfDiamond<3 || numberOfDiamond%2==0);
+                numberOfSpaces=numberOfDiamond/2;
+                for (int i=0;i<=(numberOfDiamond/2);i++){
+                    for (int z=0;z<numberOfSpaces;z++)
                     {
                         System.out.print(" ");
                     }
-                    NumberOfSpaces--;
-                    for(int j=0;j<NumberOfAsterisks;j++){
+                    numberOfSpaces--;
+                    for(int j=0;j<numberOfAsterisks;j++){
                         System.out.print('*');
                     }
                     System.out.println();
-                    NumberOfAsterisks+=2;
+                    numberOfAsterisks+=2;
                 }
 
-                NumberOfSpaces=1;
-                NumberOfAsterisks=NumberOfDiamond-2;
-                for (int i=0;i<(NumberOfDiamond/2);i++){
-                    for (int z=0;z<NumberOfSpaces;z++)
+                numberOfSpaces=1;
+                numberOfAsterisks=numberOfDiamond-2;
+                for (int i=0;i<(numberOfDiamond/2);i++){
+                    for (int z=0;z<numberOfSpaces;z++)
                     {
                         System.out.print(" ");
                     }
-                    NumberOfSpaces++;
-                    for(int j=0;j<NumberOfAsterisks;j++){
+                    numberOfSpaces++;
+                    for(int j=0;j<numberOfAsterisks;j++){
                         System.out.print('*');
                     }
                     System.out.println();
-                    NumberOfAsterisks-=2;
+                    numberOfAsterisks-=2;
                 }
 
 

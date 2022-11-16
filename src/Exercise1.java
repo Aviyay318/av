@@ -22,11 +22,13 @@ public class Exercise1 {
             System.out.println("There is no solution to the equation");
         } else if (firstNumberA == 0 && thirdNumberC == 0 && secondNumberB != 0) {
             System.out.println("There is only one solution to the equation: 0");
+        }  else if (firstNumberA==0&&secondNumberB==0&&thirdNumberC==0) {
+            System.out.println("There is no solution to the equation");
         } else if (delta==0) {
             System.out.println("There is only one solution to the equation: " + secondNumberB/(2*firstNumberA));
-        } else {
-            x1 = (secondNumberB - (Math.sqrt(delta)) / (2 * firstNumberA));
-            x2 = (secondNumberB + (Math.sqrt(delta)) / (2 * firstNumberA));
+        }else {
+            x1 = ((-secondNumberB) - (Math.sqrt(delta))) / (2 * firstNumberA);
+            x2 = ((-secondNumberB) + (Math.sqrt(delta))) / (2 * firstNumberA);
             System.out.println("There are two solutions to the equation:" + "x1= " + x1 + " x2= " + x2);
         }
 
