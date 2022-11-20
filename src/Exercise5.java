@@ -19,9 +19,9 @@ public class Exercise5 {
              System.out.println("The number"+" "+numberToCheck+" "+"is not in fibonacci series ");
              break;
          }
-         newFollowingNumber=previousNumber+followingNumber;
-         previousNumber=followingNumber;
-         followingNumber=newFollowingNumber;
+         newFollowingNumber = previousNumber + followingNumber;
+         previousNumber = followingNumber;
+         followingNumber = newFollowingNumber;
         }
 
     }

@@ -1,25 +1,26 @@
 public class Exercise7 {
     public static void main(String[] args) {
        int tempNumber;
-       int exponent;
-       int sumPower=1;
-       int sum=0;
+       int exponentByDigits;
+       int powerOfDigit=1;
+       int sumOfPowerOfDigits=0;
+        System.out.println("The narcissistic numbers are:");
       for(int i=1;i<=1000;i++){
           tempNumber=i;
-          exponent=i;
+          exponentByDigits=i;
           while (tempNumber!=0){
-           for(int power=0;exponent>0;power++){
-              sumPower*=tempNumber%10;
-              exponent/=10;
+              while (exponentByDigits>0){
+              powerOfDigit*=tempNumber%10;
+              exponentByDigits/=10;
            }
-            sum+=sumPower;
-            sumPower=1;
-            exponent=i;
+            sumOfPowerOfDigits+=powerOfDigit;
+            powerOfDigit=1;
+            exponentByDigits=i;
            tempNumber/=10;
           }
-          if(i==sum){
-          System.out.println(sum);}
-          sum=0;
+          if(i==sumOfPowerOfDigits){
+          System.out.print(sumOfPowerOfDigits + " ");}
+          sumOfPowerOfDigits=0;
       }
     }
 }
