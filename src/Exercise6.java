@@ -4,7 +4,7 @@ public class Exercise6 {
     public static void main(String[] args) {
         int number;
         int tempNumber=0;
-        int sum=0;
+        int sumOfDigits=0;
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("please enter positive number");
@@ -17,10 +17,10 @@ public class Exercise6 {
             else{
                 System.out.print(tempNumber%10+ "=");}
 
-            sum+=tempNumber%10;
+            sumOfDigits+=tempNumber%10;
             tempNumber/=10;
 
         }
-        System.out.println(sum);
+        System.out.println(sumOfDigits);
     }
 }
